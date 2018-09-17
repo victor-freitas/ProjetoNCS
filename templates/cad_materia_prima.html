@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+<form id="meuform" method ="POST">
+{% csrf_token %}
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+  <ul id="progress">
+    <li class="ativo">Cadastro de Matéria-Prima</li>
+    <li>Descrição de Matéria-Prima</li>
+    <li>Descrição de Recebimento</li>
+  </ul>
+  <fieldset>
+      <h3>Cadastre aqui a Matéria-Prima</h3>
+      <input type="text" name="nome" placeholder="Nome do Material"/>
+      <input type="text" name="quantidade_max" placeholder="Quantidade Máxima" onkeypress="return SomenteNumero(event)"/>
+      <input type="text" name="id" placeholder="Código do Material"/>
+      <input type="text" name="quantidade_min" placeholder="Quantidade Mínima"/>
+      <input type="text" name="quantidade" placeholder="Quantidade"/>
+      </br>
+      <input type="button" name="next" class="next acao" value="Proximo"/>
+  </fieldset>
+
+  <fieldset>
+      <h3>Descrição de Matéria-Prima</h3>
+      <input type="text" name="unid_medida" placeholder="Unidade de Medida"/>
+        <input type="text" name="forma_emb" placeholder="Tipo de Embalagem"/>
+      <input type="text" name="peso" placeholder="Peso"/>
+      <input type="text" name="desc_produto" placeholder="Descrição"/>
+      </br>
+      <input type="button" name="prev" class="prev acao" value="Anterior"/>
+      <input type="button" name="next" class="next acao" value="Proximo"/>
+   </fieldset>
+
+   <fieldset>
+      <h3>Recebimento de Matéria-Prima</h3>
+      <input type="text" name="data_recebimento" placeholder="Data de Recebimento"/>
+      <input type="text" name="id" placeholder="Código de Fornecedor"/>
+      </br>
+      <input type="button" name="prev" class="prev acao" value="Anterior"/>
+      <input type="submit" name="enviar" class="next acao" value="Enviar"/>
+    </fieldset>
+
+</form>
+{% endblock %}

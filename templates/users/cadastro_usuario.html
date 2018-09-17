@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post">
+{% csrf_token %}
+<fieldset
+<div class="login-page">
+
+	<div class="form">
+
+		<form class="login-form" method="post">
+
+      <input type="text" name ="username" placeholder="Username"/>
+      <input type="text" name ="name" placeholder="Nome"/>
+      <input type="email" name ="email" placeholder="E-mail"/>
+
+			<button input type="submit"> criar </button>
+
+			<p class="message">Já está Cadastrado? <a href="login.html">Entre</a></p>
+
+		</form>
+
+	</div>
+
+</div>
+</fieldset>
+{% endblock %}
