@@ -28,9 +28,9 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-#ALLOWED_HOSTS = ['projeto-ncs.herokuapp.com']
-ALLOWED_HOSTS =[]
+ALLOWED_HOSTS =['projeto-matrix.herokuapp.com']
 
+#https://projeto-matrix.herokuapp.com/ | https://git.heroku.com/projeto-matrix.git
 
 # Application definition
 
