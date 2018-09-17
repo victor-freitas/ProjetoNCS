@@ -14,7 +14,7 @@ class FormCliente(forms.ModelForm):
 
 class FormMateriaPrima(forms.ModelForm):
     class Meta:
-        model = Materiaprima
+        model = MateriaPrima
         fields = ['id','nome','forma_emb','peso','unid_medida','quantidade','quantidade_min','descricao','data_recebimento','id_fornecedor']
 
 class FormProduto(forms.ModelForm):
