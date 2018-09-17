@@ -67,6 +67,7 @@ class Materiaprima(models.Model):
     forma_emb = models.CharField(db_column='FORMA_EMB', max_length=60)  # Field name made lowercase.
     peso = models.CharField(db_column='PESO', max_length=20)  # Field name made lowercase.
     unid_medida = models.CharField(db_column='UNID_MEDIDA', max_length=50)  # Field name made lowercase.
+    quantidade_max = models.IntegerField(db_column='QUANTIDADE_MAX') #Field name made Lowercase.
     quantidade = models.IntegerField(db_column='QUANTIDADE')  # Field name made lowercase.
     quantidade_min = models.IntegerField(db_column='QUANTIDADE_MIN')  # Field name made lowercase.
     descricao = models.CharField(db_column='DESCRICAO', max_length=500)  # Field name made lowercase.
